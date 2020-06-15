@@ -24,18 +24,14 @@ server:
 netty:
   port: 7000    #netty端口
   context-path: /groupchat   #netty访问路径（和前端保持一致）
-
-spring:
-  application:
-    name: groupchat
 ```
 数据库：
 ```
 #   数据源基本配置
   datasource:
     username: root
-    password: 123456
-    url: jdbc:mysql://47.96.250.239:3306/groupchat?characterEncoding=UTF-8&useSSL=false
+    password: root
+    url: jdbc:mysql://localhost:3306/groupchat?characterEncoding=UTF-8&useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
 ```
 
