@@ -30,8 +30,8 @@ netty:
 #   数据源基本配置
   datasource:
     username: root
-    password: 123456
-    url: jdbc:mysql://47.96.250.239:3306/groupchat?characterEncoding=UTF-8&useSSL=false
+    password: root
+    url: jdbc:mysql://localhost:3306/groupchat?characterEncoding=UTF-8&useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
 ```
 
