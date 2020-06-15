@@ -4,12 +4,12 @@
 群聊弹幕系统后端。其中netty主要转发广播消息，sprngboot server来存储前端发来的消息。
 
 #### 软件架构
-springboot+netty
+vue-cli3 + springboot + netty
 
 
 #### 安装教程
 
-1.  将数据库导入主目录下的groupchat.sql
+1.  将数据库导入主目录下的groupchat.sql（构建数据库和表）
 2.  导入idea启动项目
 
 #### 使用说明
