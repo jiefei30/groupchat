@@ -4,7 +4,7 @@
 群聊弹幕系统后端。其中netty主要转发广播消息，sprngboot server来存储前端发来的消息。
 
 #### 软件架构
-vue-cli3 + springboot + netty
+springboot + netty
 
 
 #### 安装教程
