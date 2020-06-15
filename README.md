@@ -24,10 +24,6 @@ server:
 netty:
   port: 7000    #netty端口
   context-path: /groupchat   #netty访问路径（和前端保持一致）
-
-spring:
-  application:
-    name: groupchat
 ```
 数据库：
 ```
