@@ -16,7 +16,7 @@ vue-cli3 + springboot + netty
 
 1.  根据个人情况修改application.yml里的配置：
 端口和路径：
-```
+```yml
 server:
   port: 7084      #springboot端口
   servlet:
@@ -27,7 +27,7 @@ netty:
   context-path: /groupchat   #netty访问路径（和前端保持一致）
 ```
 数据库：
-```
+```yml
 #   数据源基本配置
   datasource:
     username: root
