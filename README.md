@@ -9,7 +9,8 @@ springboot+netty
 
 #### 安装教程
 
-1.  直接导入idea即可
+1.  将数据库导入主目录下的groupchat.sql
+2.  导入idea启动项目
 
 #### 使用说明
 
@@ -37,5 +38,5 @@ netty:
 
 #### 参与贡献
 
-1.  jiefei
+1.  皆非
 
