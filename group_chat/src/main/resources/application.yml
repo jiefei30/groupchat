@@ -1,0 +1,44 @@
+server:
+  port: 7084      #springboot端口
+  servlet:
+    context-path: /groupchat  #springboot访问路径
+
+netty:
+  port: 7000    #netty端口
+  context-path: /groupchat   #netty访问路径（和前端保持一致）
+
+spring:
+  application:
+    name: groupchat
+  #   数据源基本配置
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/groupchat?characterEncoding=UTF-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    #   数据源其他配置
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    filters: stat,wall,log4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+# mybatis配置
+mybatis:
+  # config-location: classpath:mybatis/mapper/mybatis-config.xml
+  type-aliases-package: com.marchsoft.groupchat.domain
+  # mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
