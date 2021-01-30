@@ -1,34 +1,34 @@
 # groupchat
 
-#### 介绍
-群聊弹幕系统后端。其中netty主要转发广播消息，sprngboot server来存储前端发来的消息。
+#### introduce
+Server of groupchat system. Among them, netty mainly forwards broadcast messages, and sprngboot server stores the messages sent from the web.
 
-#### 软件架构
-springboot + netty
+#### Architecture
+springboot & netty
 
 
-#### 安装教程
+#### How to install
 
-1.  将数据库导入主目录下的groupchat.sql（构建数据库和表）
-2.  导入idea启动项目
+1.  Import the database into groupchat.sql in the root path (build database and table)
+2.  Import idea and start the project
 
-#### 使用说明
+#### How to use
 
-1.  根据个人情况修改application.yml里的配置：
-端口和路径：
+1.  Modify the configuration in application.yml according to personal circumstances：
+port and path：
 ```yml
 server:
-  port: 7084      #springboot端口
+  port: 7084      #springboot port
   servlet:
-    context-path: /groupchat  #springboot访问路径
+    context-path: /groupchat  #project request path
 
 netty:
-  port: 7000    #netty端口
-  context-path: /groupchat   #netty访问路径（和前端保持一致）
+  port: 7000    #netty port
+  context-path: /groupchat   #netty request path（Be consistent with the web）
 ```
-数据库：
+database：
 ```yml
-#   数据源基本配置
+#   datasource configure
   datasource:
     username: root
     password: root
@@ -36,7 +36,7 @@ netty:
     driver-class-name: com.mysql.jdbc.Driver
 ```
 
-#### 参与贡献
+#### Sponsor
 
-1.  皆非
+1.  jiefei30
 
