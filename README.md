@@ -1,7 +1,11 @@
-# groupchat
+# Groupchat
 
 #### introduce
 Server of groupchat system. Among them, netty mainly forwards broadcast messages, and sprngboot server stores the messages sent from the web.
+
+bilibili：https://www.bilibili.com/video/BV1Ap4y1D7iQ?spm_id_from=333.999.0.0
+
+![](https://file.makeyourchoice.cn/img/github/groupchat.jpg)
 
 #### Architecture
 springboot & netty
